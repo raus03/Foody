@@ -24,9 +24,9 @@ public class UserRepositoryTests {
 	@Test
 	public void testCreateUser() {
 		User user = new User();
-		user.setEmail("Aman@gmail.com");
-		user.setPassword("Aman2020");
-		user.setFirstName("Aman");
+		user.setEmail("Rajnish@gmail.com");
+		user.setPassword("Rajnish2020");
+		user.setFirstName("Rajnish");
 		user.setLastName("Kumar");
 		
 		User savedUser = repo.save(user);

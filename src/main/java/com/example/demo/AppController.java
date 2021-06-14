@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class AppController {
-	
+public class AppController 
+{
 	@Autowired
 	private UserRepository repo;
 	
@@ -18,16 +18,16 @@ public class AppController {
 	}
 	
 	@GetMapping("/register")
-	public String showSignUpForm(Model model) {
+	public String showSignUpForm(Model model) 
+	{
 		model.addAttribute("user", new User());
 		return "signup_form";
 	}
 	
 	@PostMapping("/process_register")
-	public String processRegistration(User user) {
-		repo.save(user);
-		
-		return "register_succes";
+	public String processRegistration(User user)
+	{
+		repo.save(user)
 	}
-
 }
+
